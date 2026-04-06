@@ -8,12 +8,6 @@ pipeline {
 
   stages {
 
-    stage('Checkout') {
-      steps {
-        git 'https://github.com/Abbas-Hussein/my-ci-cd-app.git'
-      }
-    }
-
     stage('Build App') {
       steps {
         sh 'npm install'
